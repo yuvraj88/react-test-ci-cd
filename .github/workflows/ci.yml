@@ -28,7 +28,7 @@ jobs:
         run: npm run build
 
       - name: List build directory contents
-        run: ls -la ./build
+        run: ls -la ./.next
 
       - name: Deploy to GitHub Pages
         if: github.ref == 'refs/heads/main'
